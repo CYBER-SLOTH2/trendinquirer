@@ -17,7 +17,7 @@ const blogTpl = fs.readFileSync("templates/blog-index.html", "utf8");
 
 const posts = [];
 
-/* -------- POSTS -------- */
+/* POSTS */
 for (const file of fs.readdirSync(postsDir)) {
   if (!file.endsWith(".md")) continue;
 
@@ -37,15 +37,15 @@ for (const file of fs.readdirSync(postsDir)) {
 
   posts.push({
     title: data.title,
-    slug: data.slug,
     description: data.description,
+    slug: data.slug,
     url: `${SITE_URL}/blog/${data.slug}.html`,
     lastmod: new Date().toISOString().split("T")[0]
   });
 }
 
-/* -------- LIST -------- */
-const postListHTML = posts
+/* LIST */
+const listHTML = posts
   .slice()
   .reverse()
   .map(
@@ -57,28 +57,26 @@ const postListHTML = posts
   )
   .join("");
 
-/* -------- HOME -------- */
+/* HOME */
 fs.writeFileSync(
   path.join(outDir, "index.html"),
-  homeTpl.replace("{{POST_LIST}}", postListHTML)
+  homeTpl.replace("{{POST_LIST}}", listHTML)
 );
 
-/* -------- BLOG INDEX -------- */
+/* BLOG INDEX */
 fs.writeFileSync(
   path.join(blogDir, "index.html"),
-  blogTpl.replace("{{POST_LIST}}", postListHTML)
+  blogTpl.replace("{{POST_LIST}}", listHTML)
 );
 
-/* -------- SITEMAP -------- */
+/* SITEMAP */
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>${SITE_URL}/</loc></url>
   <url><loc>${SITE_URL}/blog/</loc></url>
-  ${posts
-    .map(p => `<url><loc>${p.url}</loc></url>`)
-    .join("")}
+  ${posts.map(p => `<url><loc>${p.url}</loc></url>`).join("")}
 </urlset>`;
 
 fs.writeFileSync(path.join(outDir, "sitemap.xml"), sitemap);
 
-console.log("✅ Site built into /public (Cloudflare-safe)");
+console.log("✅ Build completed (Cloudflare Pages compatible)");
