@@ -6,8 +6,7 @@ import { marked } from "marked";
 const SITE_URL = "https://trendinquirer.com";
 
 const postsDir = "content/blog";
-const distDir = "dist";
-const blogOut = path.join(distDir, "blog");
+const blogOut = "blog";
 
 fs.mkdirSync(blogOut, { recursive: true });
 
@@ -17,7 +16,7 @@ const blogTpl = fs.readFileSync("templates/blog-index.html", "utf8");
 
 const posts = [];
 
-/* ---------- BUILD BLOG POSTS ---------- */
+/* -------- BUILD POSTS -------- */
 for (const file of fs.readdirSync(postsDir)) {
   if (!file.endsWith(".md")) continue;
 
@@ -30,19 +29,18 @@ for (const file of fs.readdirSync(postsDir)) {
     .replace(/{{SLUG}}/g, data.slug)
     .replace(/{{CONTENT}}/g, marked(content));
 
-  const outPath = path.join(blogOut, `${data.slug}.html`);
-  fs.writeFileSync(outPath, html);
+  fs.writeFileSync(`blog/${data.slug}.html`, html);
 
   posts.push({
     title: data.title,
     slug: data.slug,
     description: data.description,
-    lastmod: new Date().toISOString().split("T")[0],
-    url: `${SITE_URL}/blog/${data.slug}.html`
+    url: `${SITE_URL}/blog/${data.slug}.html`,
+    lastmod: new Date().toISOString().split("T")[0]
   });
 }
 
-/* ---------- BUILD POST LIST ---------- */
+/* -------- LIST HTML -------- */
 const postListHTML = posts
   .slice()
   .reverse()
@@ -53,49 +51,42 @@ const postListHTML = posts
   <small>${p.description}</small>
 </li>`
   )
-  .join("\n");
+  .join("");
 
-/* ---------- BUILD HOMEPAGE ---------- */
+/* -------- HOMEPAGE -------- */
 fs.writeFileSync(
-  path.join(distDir, "index.html"),
+  "index.html",
   homeTpl.replace("{{POST_LIST}}", postListHTML)
 );
 
-/* ---------- BUILD BLOG INDEX ---------- */
+/* -------- BLOG INDEX -------- */
 fs.writeFileSync(
-  path.join(blogOut, "index.html"),
+  "blog/index.html",
   blogTpl.replace("{{POST_LIST}}", postListHTML)
 );
 
-/* ---------- BUILD SITEMAP ---------- */
-const sitemapUrls = [
-  {
-    loc: `${SITE_URL}/`,
-    lastmod: new Date().toISOString().split("T")[0]
-  },
-  {
-    loc: `${SITE_URL}/blog/`,
-    lastmod: new Date().toISOString().split("T")[0]
-  },
-  ...posts.map(p => ({
-    loc: p.url,
-    lastmod: p.lastmod
-  }))
-];
-
-const sitemapXML = `<?xml version="1.0" encoding="UTF-8"?>
+/* -------- SITEMAP -------- */
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${sitemapUrls
-  .map(
-    u => `
   <url>
-    <loc>${u.loc}</loc>
-    <lastmod>${u.lastmod}</lastmod>
+    <loc>${SITE_URL}/</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+  </url>
+  <url>
+    <loc>${SITE_URL}/blog/</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+  </url>
+  ${posts
+    .map(
+      p => `
+  <url>
+    <loc>${p.url}</loc>
+    <lastmod>${p.lastmod}</lastmod>
   </url>`
-  )
-  .join("")}
+    )
+    .join("")}
 </urlset>`;
 
-fs.writeFileSync(path.join(distDir, "sitemap.xml"), sitemapXML);
+fs.writeFileSync("sitemap.xml", sitemap);
 
-console.log("✅ Dynamic homepage, blog & sitemap generated");
+console.log("✅ Site built directly to root (Cloudflare-native)");
