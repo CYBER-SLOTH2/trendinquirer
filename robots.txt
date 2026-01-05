@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://trendinquirer.com/sitemap.xml
