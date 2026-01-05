@@ -6,9 +6,10 @@ import { marked } from "marked";
 const SITE_URL = "https://trendinquirer.com";
 
 const postsDir = "content/blog";
-const blogOut = "blog";
+const outDir = "public";
+const blogDir = path.join(outDir, "blog");
 
-fs.mkdirSync(blogOut, { recursive: true });
+fs.mkdirSync(blogDir, { recursive: true });
 
 const postTpl = fs.readFileSync("templates/post.html", "utf8");
 const homeTpl = fs.readFileSync("templates/home.html", "utf8");
@@ -16,7 +17,7 @@ const blogTpl = fs.readFileSync("templates/blog-index.html", "utf8");
 
 const posts = [];
 
-/* -------- BUILD POSTS -------- */
+/* -------- POSTS -------- */
 for (const file of fs.readdirSync(postsDir)) {
   if (!file.endsWith(".md")) continue;
 
@@ -29,7 +30,10 @@ for (const file of fs.readdirSync(postsDir)) {
     .replace(/{{SLUG}}/g, data.slug)
     .replace(/{{CONTENT}}/g, marked(content));
 
-  fs.writeFileSync(`blog/${data.slug}.html`, html);
+  fs.writeFileSync(
+    path.join(blogDir, `${data.slug}.html`),
+    html
+  );
 
   posts.push({
     title: data.title,
@@ -40,7 +44,7 @@ for (const file of fs.readdirSync(postsDir)) {
   });
 }
 
-/* -------- LIST HTML -------- */
+/* -------- LIST -------- */
 const postListHTML = posts
   .slice()
   .reverse()
@@ -53,40 +57,28 @@ const postListHTML = posts
   )
   .join("");
 
-/* -------- HOMEPAGE -------- */
+/* -------- HOME -------- */
 fs.writeFileSync(
-  "index.html",
+  path.join(outDir, "index.html"),
   homeTpl.replace("{{POST_LIST}}", postListHTML)
 );
 
 /* -------- BLOG INDEX -------- */
 fs.writeFileSync(
-  "blog/index.html",
+  path.join(blogDir, "index.html"),
   blogTpl.replace("{{POST_LIST}}", postListHTML)
 );
 
 /* -------- SITEMAP -------- */
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>${SITE_URL}/</loc>
-    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-  </url>
-  <url>
-    <loc>${SITE_URL}/blog/</loc>
-    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-  </url>
+  <url><loc>${SITE_URL}/</loc></url>
+  <url><loc>${SITE_URL}/blog/</loc></url>
   ${posts
-    .map(
-      p => `
-  <url>
-    <loc>${p.url}</loc>
-    <lastmod>${p.lastmod}</lastmod>
-  </url>`
-    )
+    .map(p => `<url><loc>${p.url}</loc></url>`)
     .join("")}
 </urlset>`;
 
-fs.writeFileSync("sitemap.xml", sitemap);
+fs.writeFileSync(path.join(outDir, "sitemap.xml"), sitemap);
 
-console.log("✅ Site built directly to root (Cloudflare-native)");
+console.log("✅ Site built into /public (Cloudflare-safe)");
