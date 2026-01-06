@@ -1,10 +1,10 @@
 ---
-layout: ../layouts/Layout.astro
+layout: ../layouts/AboutLayout.astro
 title: "Terms of Service"
 ---
 
 ## Terms of Service
 
-These Terms of Service govern your use of Trend Inquirer. Use this site at your own risk. By using the site you agree to these terms.
+These Terms of Service govern your use of TrendInquirer. By using the site you agree to these terms.
 
-Replace this placeholder with a full Terms of Service tailored to your operation and jurisdiction.
+This page is a template — replace the following with a full Terms of Service that reflects your business practices, limitations of liability, DMCA policy, and jurisdiction.
