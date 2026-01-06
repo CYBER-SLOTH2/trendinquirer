@@ -2,7 +2,9 @@ import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 import { SITE } from "@/config";
 
-export const BLOG_PATH = "src/data/blog";
+// Point BLOG_PATH to a non-existing folder to disable demo/sample posts
+// Move your real posts into `src/data/posts` (or update this path later)
+export const BLOG_PATH = "src/data/_posts";
 
 const blog = defineCollection({
   loader: glob({ pattern: "**/[^_]*.md", base: `./${BLOG_PATH}` }),
