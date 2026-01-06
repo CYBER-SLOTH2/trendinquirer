@@ -44,9 +44,33 @@ const isActive = (path: string) => {
   >
     <a
       href="/"
-      class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none flex items-center gap-3"
+      class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none flex items-center gap-3 logo-link"
+      aria-label="TrendInquirer home"
     >
-      <img src="/logo.svg" alt="TrendInquirer" width="160" height="26" class="inline-block" />
+      <!-- Inline SVG wordmark for crisp rendering across devices -->
+      <svg
+        width="160"
+        height="32"
+        viewBox="0 0 400 80"
+        preserveAspectRatio="xMidYMid meet"
+        role="img"
+        aria-hidden="false"
+        class="logo-svg transition-transform duration-200"
+      >
+        <defs>
+          <linearGradient id="g" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0%" stop-color="#06b6d4" />
+            <stop offset="100%" stop-color="#7c3aed" />
+          </linearGradient>
+        </defs>
+        <g>
+          <rect x="8" y="8" width="64" height="64" rx="12" fill="url(#g)" />
+          <path d="M30 22 L44 38" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="32" cy="44" r="6" fill="#fff" />
+        </g>
+        <text x="88" y="48" font-family="Inter, Roboto, Arial, sans-serif" font-size="28" fill="#0f172a" font-weight="800">Trend</text>
+        <text x="180" y="48" font-family="Inter, Roboto, Arial, sans-serif" font-size="28" fill="url(#g)" font-weight="800">Inquirer</text>
+      </svg>
     </a>
     <nav
       id="nav-menu"
@@ -150,6 +174,8 @@ const isActive = (path: string) => {
 
     if (!menuBtn || !menuItems || !menuIcon || !closeIcon) return;
 
+    const logo = document.querySelector(".logo-svg");
+
     menuBtn.addEventListener("click", () => {
       const openMenu = menuBtn.getAttribute("aria-expanded") === "true";
 
@@ -159,6 +185,16 @@ const isActive = (path: string) => {
       menuItems.classList.toggle("hidden");
       menuIcon.classList.toggle("hidden");
       closeIcon.classList.toggle("hidden");
+
+      // Scale logo slightly when menu is opened on small screens to preserve layout
+      if (logo) {
+        if (!openMenu) {
+          logo.style.transform = "scale(0.86)";
+          logo.style.transition = "transform 220ms ease";
+        } else {
+          logo.style.transform = "scale(1)";
+        }
+      }
     });
   }
 
