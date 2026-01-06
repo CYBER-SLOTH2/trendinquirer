@@ -47,16 +47,15 @@ const isActive = (path: string) => {
       class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none flex items-center gap-3 logo-link"
       aria-label="TrendInquirer home"
     >
-      <!-- Inline SVG wordmark for crisp rendering across devices -->
-      <svg
-        width="160"
-        height="32"
-        viewBox="0 0 400 80"
-        preserveAspectRatio="xMidYMid meet"
-        role="img"
-        aria-hidden="false"
-        class="logo-svg transition-transform duration-200"
-      >
+      <div class="logo-container">
+        <!-- Inline SVG wordmark for crisp rendering across devices -->
+        <svg
+          viewBox="0 0 400 80"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          aria-hidden="false"
+          class="logo-svg transition-transform duration-200"
+        >
         <defs>
           <linearGradient id="g" x1="0" x2="1" y1="0" y2="0">
             <stop offset="0%" stop-color="#06b6d4" />
@@ -70,7 +69,9 @@ const isActive = (path: string) => {
         </g>
         <text x="88" y="48" font-family="Inter, Roboto, Arial, sans-serif" font-size="28" fill="var(--logo-text)" font-weight="800">Trend</text>
         <text x="180" y="48" font-family="Inter, Roboto, Arial, sans-serif" font-size="28" fill="var(--logo-text)" font-weight="800">Inquirer</text>
-      </svg>
+        </svg>
+      </div>
+      <span class="sr-only">TrendInquirer</span>
     </a>
     <nav
       id="nav-menu"

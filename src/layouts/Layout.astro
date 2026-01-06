@@ -36,7 +36,7 @@ const socialImageURL = new URL(ogImage, Astro.url);
 const structuredData = pubDatetime
   ? {
       "@context": "https://schema.org",
-      "@type": "Article",
+      "@type": "NewsArticle",
       headline: `${title}`,
       image: `${socialImageURL}`,
       datePublished: `${pubDatetime?.toISOString()}`,
@@ -48,6 +48,10 @@ const structuredData = pubDatetime
           ...(profile && { url: profile }),
         },
       ],
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": canonicalURL,
+      },
     }
   : {
       "@context": "https://schema.org",

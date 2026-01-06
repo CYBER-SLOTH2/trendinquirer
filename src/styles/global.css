@@ -41,6 +41,8 @@ html[data-theme="dark"] {
   }
   body {
     @apply flex min-h-svh flex-col bg-background font-mono text-foreground selection:bg-accent/75 selection:text-background;
+    font-size: 18px;
+    line-height: 1.75;
   }
   a,
   button {
@@ -50,6 +52,53 @@ html[data-theme="dark"] {
   [role="button"]:not(:disabled) {
     cursor: pointer;
   }
+}
+
+/* Logo container: keeps SVG sharp and vertically centered */
+.logo-container {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.logo-svg {
+  height: 100%;
+  width: auto;
+  max-width: 220px;
+  display: block;
+}
+
+/* AdSense / Ad placeholders - reserve space to prevent CLS */
+.ad-placeholder {
+  min-height: 250px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+}
+.ad-slot .ad-placeholder {
+  width: 100%;
+}
+
+/* Header and sidebar ad-specific placeholders */
+.ad-header {
+  min-height: 90px;
+}
+.ad-sidebar {
+  min-height: 250px;
+}
+
+/* Sticky sidebar util */
+.sticky-sidebar {
+  position: sticky;
+  top: 20px;
+}
+
+/* Ensure images are responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 @utility max-w-app {
