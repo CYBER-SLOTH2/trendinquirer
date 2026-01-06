@@ -100,6 +100,17 @@ Documentation can be read in two formats\_ _markdown_ & _blog post_.
 4. (Optional) If using Cloudflare Functions, keep `wrangler.toml` in the repo for configuration.
 
 After deploy, Cloudflare Pages will serve the site from `https://your-domain/` once the custom domain is configured.
+
+### Adding Google AdSense (optional)
+
+- Add your AdSense publisher script into the site `<head>` (in `src/layouts/Layout.astro`):
+
+```html
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX" crossorigin="anonymous"></script>
+```
+
+- Place ad blocks in posts or layout using the `src/components/AdSlot.astro` component and replace the placeholder with the official `<ins class="adsbygoogle">` markup. Ensure you follow Google AdSense program policies and Search Quality guidelines before requesting ad serving.
+
 **Illustration in About Page** - [https://freesvgillustration.com](https://freesvgillustration.com/)  
 **Linting** - [ESLint](https://eslint.org)
 
