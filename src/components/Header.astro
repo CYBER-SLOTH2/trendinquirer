@@ -73,6 +73,10 @@ const isActive = (path: string) => {
       </div>
       <span class="sr-only">TrendInquirer</span>
     </a>
+    <!-- Header ad placeholder reserved to prevent CLS when Auto-Ads inject -->
+    <div class="hidden sm:block ms-4 ad-header" aria-hidden="true">
+      <div class="ad-placeholder"></div>
+    </div>
     <nav
       id="nav-menu"
       class="flex w-full flex-col items-center sm:ms-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0"

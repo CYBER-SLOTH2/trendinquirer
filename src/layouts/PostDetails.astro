@@ -321,6 +321,23 @@ const nextPost =
   }
   attachCopyButtons();
 
+  // Ensure the first image in the article is eager (LCP), others lazy
+  (function prioritizeLCP() {
+    try {
+      const article = document.querySelector('#article');
+      if (!article) return;
+      const imgs = Array.from(article.querySelectorAll('img'));
+      if (imgs.length === 0) return;
+      // First image: eager
+      imgs[0].setAttribute('data-eager', 'true');
+      imgs[0].loading = 'eager';
+      // Rest: lazy
+      for (let i = 1; i < imgs.length; i++) imgs[i].loading = 'lazy';
+    } catch (e) {
+      // noop
+    }
+  })();
+
   /* Go to page start after page swap */
   document.addEventListener("astro:after-swap", () =>
     window.scrollTo({ left: 0, top: 0, behavior: "instant" })

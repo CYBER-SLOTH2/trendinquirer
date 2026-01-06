@@ -152,6 +152,24 @@ const structuredData = pubDatetime
     <ClientRouter />
 
     <script is:inline src="/toggle-theme.js"></script>
+
+    <!-- Lazy-load images by default; pages may mark a specific image with data-eager="true" to opt-out -->
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', function () {
+        try {
+          const imgs = Array.from(document.images || []);
+          for (const img of imgs) {
+            if (!img.hasAttribute('data-eager')) {
+              img.loading = 'lazy';
+            } else {
+              img.loading = 'eager';
+            }
+          }
+        } catch (e) {
+          // silent
+        }
+      });
+    </script>
   </head>
   <body>
     <slot />
