@@ -15,6 +15,7 @@ import { slugifyStr } from "@/utils/slugify";
 import IconChevronLeft from "@/assets/icons/IconChevronLeft.svg";
 import IconChevronRight from "@/assets/icons/IconChevronRight.svg";
 import { SITE } from "@/config";
+import TableOfContents from "@/components/TableOfContents.astro";
 
 type Props = {
   post: CollectionEntry<"blog">;
@@ -57,15 +58,43 @@ const ogImage = ogImageUrl
   ? new URL(ogImageUrl, Astro.url.origin).href
   : undefined;
 
+// Truncate title/description to recommended lengths for SEO
 const layoutProps = {
-  title: `${title} | ${SITE.title}`,
+  title: `${(title ?? "").slice(0, 60)} | ${SITE.title}`,
   author,
-  description,
+  description: (description ?? "").slice(0, 150),
   pubDatetime,
   modDatetime,
   canonicalURL,
   ogImage,
   scrollSmooth: true,
+};
+
+// JSON-LD NewsArticle for better news SEO
+const newsArticle = {
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": canonicalURL || new URL(getPath(post.id, post.filePath), Astro.site).href,
+  },
+  headline: title,
+  image: ogImage || new URL(SITE.ogImage || "/favicon.svg", Astro.site).href,
+  datePublished: new Date(pubDatetime).toISOString(),
+  ...(modDatetime && { dateModified: new Date(modDatetime).toISOString() }),
+  author: {
+    "@type": "Organization",
+    name: author || SITE.title,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: SITE.title,
+    logo: {
+      "@type": "ImageObject",
+      url: new URL("/favicon.svg", Astro.site).href,
+    },
+  },
+  description: (description ?? "").slice(0, 150),
 };
 
 /* ========== Prev/Next Posts ========== */
@@ -85,35 +114,45 @@ const nextPost =
 
 <Layout {...layoutProps}>
   <Header />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(newsArticle)} />
   <BackButton />
   <main
     id="main-content"
     class:list={["app-layout pb-12", { "mt-8": !SITE.showBackButton }]}
     data-pagefind-body
   >
-    <h1
-      transition:name={slugifyStr(title)}
-      class="inline-block text-2xl font-bold text-accent sm:text-3xl"
-    >
-      {title}
-    </h1>
-    <div class="my-2 flex items-center gap-2">
-      <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />
-      <span
-        aria-hidden="true"
-        class:list={[
-          "max-sm:hidden",
-          { hidden: !SITE.editPost.enabled || hideEditPost },
-        ]}>|</span
+    <header class="mb-4">
+      <h1
+        transition:name={slugifyStr(title)}
+        class="inline-block text-2xl font-bold text-accent sm:text-3xl"
       >
-      <EditPost {hideEditPost} {post} class="max-sm:hidden" />
+        {title}
+      </h1>
+      <div class="my-2 flex items-center gap-2">
+        <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />
+        <span
+          aria-hidden="true"
+          class:list={[
+            "max-sm:hidden",
+            { hidden: !SITE.editPost.enabled || hideEditPost },
+          ]}>|</span
+        >
+        <EditPost {hideEditPost} {post} class="max-sm:hidden" />
+      </div>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr,280px] gap-8">
+      <article
+        id="article"
+        class="app-prose mt-0 w-full max-w-none prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"
+      >
+        <Content />
+      </article>
+
+      <aside aria-label="Article tools" class="hidden lg:block">
+        <TableOfContents />
+      </aside>
     </div>
-    <article
-      id="article"
-      class="app-prose mt-8 w-full max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"
-    >
-      <Content />
-    </article>
 
     <!-- Ad slot (replace placeholder with real ad markup) -->
     <AdSlot />
