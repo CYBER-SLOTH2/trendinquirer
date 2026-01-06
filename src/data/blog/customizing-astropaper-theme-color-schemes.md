@@ -23,7 +23,7 @@ AstroPaper theme will include light and dark mode by default. In other words, th
 
 ```js file="src/config.ts"
 export const SITE = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
+  website: "https://trendinquirer.com/", // replace this with your deployed domain
   author: "Sat Naing",
   profile: "https://satnaing.dev/",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
@@ -132,4 +132,4 @@ html[data-theme="light"] {
 /* ... */
 ```
 
-> Check out some [predefined color schemes](https://astro-paper.pages.dev/posts/predefined-color-schemes/) AstroPaper has already crafted for you.
+> Check out some [predefined color schemes](https://trendinquirer.com/posts/predefined-color-schemes/) AstroPaper has already crafted for you.

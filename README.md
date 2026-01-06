@@ -9,7 +9,7 @@
 
 AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro blog theme. This theme is designed and crafted based on [my personal blog](https://satnaing.dev/blog).
 
-Read [the blog posts](https://astro-paper.pages.dev/posts/) or check [the README Documentation Section](#-documentation) for more info.
+Read [the blog posts](https://trendinquirer.com/posts/) or check [the README Documentation Section](#-documentation) for more info.
 
 ## 🔥 Features
 
@@ -24,14 +24,14 @@ Read [the blog posts](https://astro-paper.pages.dev/posts/) or check [the README
 - [x] sitemap & rss feed
 - [x] followed best practices
 - [x] highly customizable
-- [x] dynamic OG image generation for blog posts [#15](https://github.com/satnaing/astro-paper/pull/15) ([Blog Post](https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/))
+- [x] dynamic OG image generation for blog posts [#15](https://github.com/satnaing/astro-paper/pull/15) ([Blog Post](https://trendinquirer.com/posts/dynamic-og-image-generation-in-astropaper-blog-posts/))
 
 _Note: I've tested screen-reader accessibility of AstroPaper using **VoiceOver** on Mac and **TalkBack** on Android. I couldn't test all other screen-readers out there. However, accessibility enhancements in AstroPaper should be working fine on others as well._
 
 ## ✅ Lighthouse Score
 
 <p align="center">
-  <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fastro-paper.pages.dev%2F&form_factor=desktop">
+  <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Ftrendinquirer.com%2F&form_factor=desktop">
     <img width="710" alt="AstroPaper Lighthouse Score" src="AstroPaper-lighthouse-score.svg">
   <a>
 </p>
@@ -77,10 +77,10 @@ All blog posts are stored in `src/data/blog` directory.
 
 Documentation can be read in two formats\_ _markdown_ & _blog post_.
 
-- Configuration - [markdown](src/data/blog/how-to-configure-astropaper-theme.md) | [blog post](https://astro-paper.pages.dev/posts/how-to-configure-astropaper-theme/)
-- Add Posts - [markdown](src/data/blog/adding-new-post.md) | [blog post](https://astro-paper.pages.dev/posts/adding-new-posts-in-astropaper-theme/)
-- Customize Color Schemes - [markdown](src/data/blog/customizing-astropaper-theme-color-schemes.md) | [blog post](https://astro-paper.pages.dev/posts/customizing-astropaper-theme-color-schemes/)
-- Predefined Color Schemes - [markdown](src/data/blog/predefined-color-schemes.md) | [blog post](https://astro-paper.pages.dev/posts/predefined-color-schemes/)
+- Configuration - [markdown](src/data/blog/how-to-configure-astropaper-theme.md) | [blog post](https://trendinquirer.com/posts/how-to-configure-astropaper-theme/)
+- Add Posts - [markdown](src/data/blog/adding-new-post.md) | [blog post](https://trendinquirer.com/posts/adding-new-posts-in-astropaper-theme/)
+- Customize Color Schemes - [markdown](src/data/blog/customizing-astropaper-theme-color-schemes.md) | [blog post](https://trendinquirer.com/posts/customizing-astropaper-theme-color-schemes/)
+- Predefined Color Schemes - [markdown](src/data/blog/predefined-color-schemes.md) | [blog post](https://trendinquirer.com/posts/predefined-color-schemes/)
 
 ## 💻 Tech Stack
 
