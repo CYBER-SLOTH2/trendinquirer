@@ -11,12 +11,12 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
 ---
 
 <footer
-  class:list={["app-layout bg-background/50", { "mt-auto": !noMarginTop }, className]}
+  class:list={["app-layout bg-background/50 text-sm", { "mt-auto": !noMarginTop }, className]}
   {...attrs}
 >
-  <div class="py-8 border-t border-border">
-    <div class="max-w-screen-xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-      <div class="md:col-span-2 flex flex-col gap-3">
+  <div class="py-10 border-t border-border">
+    <div class="max-w-screen-xl mx-auto px-4 grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+      <div class="md:col-span-5">
         <a href="/" class="inline-flex items-center gap-3" aria-label="TrendInquirer home">
           <svg viewBox="0 0 400 80" fill="none" aria-hidden="true" class="flex-shrink-0 svg-responsive" role="img" aria-label="TrendInquirer logo">
             <defs>
@@ -29,30 +29,46 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
             <path d="M30 22 L44 38" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
             <circle cx="32" cy="44" r="6" fill="#fff" />
           </svg>
-          <div class="text-sm">
+          <div>
             <div class="font-semibold">TrendInquirer</div>
-            <div class="text-xs text-muted">Latest Trends, Expert Insights & Breaking News</div>
+            <div class="text-xs text-muted">Curated analysis and timely reporting.</div>
           </div>
         </a>
 
-        <p class="text-sm text-muted max-w-prose">TrendInquirer provides concise, trustworthy reporting on technology, AI, finance, and world news. Subscribe to our RSS feed or follow our updates for daily insights.</p>
+        <p class="mt-4 text-muted max-w-prose">TrendInquirer publishes concise, trustworthy reporting on technology, AI, finance, and culture. We focus on clear, actionable insights for readers and professionals.</p>
       </div>
 
-      <div class="flex flex-col gap-2">
-        <h3 class="text-sm font-semibold">Quick links</h3>
-        <ul class="text-sm space-y-2">
-          <li><a href="/about/" class="underline">About</a></li>
-          <li><a href="/privacy/" class="underline">Privacy</a></li>
-          <li><a href="/terms/" class="underline">Terms</a></li>
-          <li><a href="/rss.xml" class="underline">RSS</a></li>
-        </ul>
-      </div>
-    </div>
+      <div class="md:col-span-4 grid grid-cols-2 gap-6">
+        <div>
+          <h4 class="font-semibold mb-2">Explore</h4>
+          <ul class="space-y-2">
+            <li><a href="/posts/">All Posts</a></li>
+            <li><a href="/tags/">Tags</a></li>
+            <li><a href="/archives/">Archives</a></li>
+            <li><a href="/search/">Search</a></li>
+          </ul>
+        </div>
 
-    <div class="mt-6 border-t border-border pt-4">
-      <div class="max-w-screen-xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between text-sm text-muted">
-        <div>© {currentYear} TrendInquirer. All rights reserved.</div>
-        <div class="mt-2 sm:mt-0">Built for speed — optimized for readers.</div>
+        <div>
+          <h4 class="font-semibold mb-2">Legal</h4>
+          <ul class="space-y-2">
+            <li><a href="/about/">About</a></li>
+            <li><a href="/privacy/">Privacy</a></li>
+            <li><a href="/terms/">Terms</a></li>
+            <li><a href="/rss.xml">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="md:col-span-3">
+        <h4 class="font-semibold mb-2">Stay informed</h4>
+        <p class="text-muted mb-3">Subscribe to short, weekly updates — no spam.</p>
+        <form action="#" method="post" class="flex gap-2">
+          <input aria-label="Email address" name="email" type="email" placeholder="you@example.com" class="flex-1 rounded border border-border px-3 py-2 bg-transparent focus:outline-none" />
+          <button class="btn btn-primary rounded px-3 py-2" type="submit">Subscribe</button>
+        </form>
+
+        <div class="mt-6 text-xs text-muted">© {currentYear} TrendInquirer. All rights reserved.</div>
       </div>
     </div>
   </div>
