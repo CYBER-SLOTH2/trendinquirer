@@ -6,7 +6,7 @@ title: "About"
 
 Trend Inquirer is a concise site covering current trends and insights. Articles are written to be quick to read and easy to share.
 
-![Trend Inquirer](public/astropaper-og.jpg)
+![Trend Inquirer — hero image](/assets/images/about-hero.svg)
 
 This site is powered by Astro and Tailwind CSS to provide a fast, accessible reading experience with light and dark themes.
 
