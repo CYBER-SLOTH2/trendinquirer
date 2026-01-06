@@ -1,0 +1,33 @@
+---
+// Client-side Table of Contents: scans article for H2 headings and builds links
+---
+
+<nav aria-label="Table of contents" class="toc-root hidden lg:block sticky top-20 max-h-[70vh] overflow-auto p-4 border rounded bg-background">
+  <h2 class="text-sm font-semibold mb-2">On this page</h2>
+  <ul id="toc-list" class="text-sm space-y-1"></ul>
+</nav>
+
+<script is:inline>
+  (function buildTOC(){
+    if (typeof document === 'undefined') return;
+    const tocRoot = document.querySelector('.toc-root');
+    const tocList = document.getElementById('toc-list');
+    const article = document.getElementById('article');
+    if (!tocRoot || !tocList || !article) return;
+    const headings = Array.from(article.querySelectorAll('h2'));
+    if (headings.length === 0) return;
+    tocRoot.classList.remove('hidden');
+    headings.forEach(h => {
+      if (!h.id) {
+        h.id = h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      }
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.textContent = h.textContent;
+      a.className = 'text-[0.95rem] hover:underline block';
+      li.appendChild(a);
+      tocList.appendChild(li);
+    });
+  })();
+</script>
