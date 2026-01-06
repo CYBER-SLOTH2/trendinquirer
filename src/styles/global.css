@@ -88,6 +88,17 @@ html[data-theme="dark"] {
   width: 100%;
 }
 
+/* Make muted text legible in light mode while remaining subtle in dark mode */
+.text-muted {
+  color: rgba(55,65,81,0.9); /* slate-700, visible in light */
+}
+
+@media (prefers-color-scheme: dark) {
+  .text-muted {
+    color: rgba(226,232,240,0.75); /* lighter in dark mode */
+  }
+}
+
 /* Header and sidebar ad-specific placeholders */
 .ad-header {
   min-height: 90px;

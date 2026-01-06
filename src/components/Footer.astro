@@ -47,13 +47,14 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
 
       <div class="md:col-span-3">
         <h4 class="font-semibold mb-2">Stay informed</h4>
-        <p class="text-muted mb-3">Subscribe to short, weekly updates — no spam.</p>
-        <form action="#" method="post" class="flex gap-2">
-          <input aria-label="Email address" name="email" type="email" placeholder="you@example.com" class="flex-1 rounded border border-border px-3 py-2 bg-transparent focus:outline-none" />
-          <button class="btn btn-primary rounded px-3 py-2" type="submit">Subscribe</button>
+        <p class="mb-3">Subscribe to short, weekly updates — no spam. We send one concise newsletter per week.</p>
+        <form action="#" method="post" class="flex gap-2" aria-label="Subscribe to TrendInquirer newsletter">
+          <input aria-label="Email address" name="email" type="email" placeholder="you@example.com" required class="flex-1 rounded border border-border px-3 py-2 bg-white/5 text-foreground focus:outline-none" />
+          <button class="rounded px-3 py-2 bg-accent text-white hover:opacity-95" type="submit">Subscribe</button>
         </form>
 
-        <div class="mt-6 text-xs text-muted">© {currentYear} TrendInquirer. All rights reserved.</div>
+        <div class="mt-4 text-xs">Contact: <a href="mailto:editor@trendinquirer.com" class="underline">editor@trendinquirer.com</a></div>
+        <div class="mt-2 text-xs">© {currentYear} TrendInquirer. All rights reserved.</div>
       </div>
     </div>
   </div>
