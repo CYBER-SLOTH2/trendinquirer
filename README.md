@@ -1,13 +1,13 @@
-# AstroPaper 📄
+# Trend Inquirer 📄
 
-![AstroPaper](public/astropaper-og.jpg)
+![Trend Inquirer](public/astropaper-og.jpg)
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/community/file/1356898632249991861)
 ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![GitHub](https://img.shields.io/github/license/satnaing/astro-paper?color=%232F3741&style=for-the-badge)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white&style=for-the-badge)](https://conventionalcommits.org)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)
 
-AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro blog theme. This theme is designed and crafted based on [my personal blog](https://satnaing.dev/blog).
+Trend Inquirer is a minimal, responsive, accessible and SEO-friendly blog built with Astro and Tailwind CSS.
 
 Read [the blog posts](https://trendinquirer.com/posts/) or check [the README Documentation Section](#-documentation) for more info.
 
@@ -91,35 +91,27 @@ Documentation can be read in two formats\_ _markdown_ & _blog post_.
 **Static Search** - [FuseJS](https://pagefind.app/)  
 **Icons** - [Tablers](https://tabler-icons.io/)  
 **Code Formatting** - [Prettier](https://prettier.io/)  
-**Deployment** - [Cloudflare Pages](https://pages.cloudflare.com/)  
+**Deployment** - [Cloudflare Pages](https://pages.cloudflare.com/)
+### Deploy to Cloudflare Pages
+
+1. In Cloudflare Pages, create a new project and connect your Git repository.
+2. Set the **Build command** to `pnpm run build` and the **Build output directory** to `dist`.
+3. Ensure the project installs dependencies with `pnpm` (or change commands to `npm` if needed).
+4. (Optional) If using Cloudflare Functions, keep `wrangler.toml` in the repo for configuration.
+
+After deploy, Cloudflare Pages will serve the site from `https://your-domain/` once the custom domain is configured.
 **Illustration in About Page** - [https://freesvgillustration.com](https://freesvgillustration.com/)  
 **Linting** - [ESLint](https://eslint.org)
 
 ## 👨🏻‍💻 Running Locally
 
-You can start using this project locally by running the following command in your desired directory:
+You can start the project locally:
 
 ```bash
-# pnpm
-pnpm create astro@latest --template satnaing/astro-paper
-
-# npm
-npm create astro@latest -- --template satnaing/astro-paper
-
-# yarn
-yarn create astro --template satnaing/astro-paper
-
-# bun
-bun create astro@latest -- --template satnaing/astro-paper
-```
-
-Then start the project by running the following commands:
-
-```bash
-# install dependencies if you haven't done so in the previous step.
+# install
 pnpm install
 
-# start running the project
+# start dev server
 pnpm run dev
 ```
 
@@ -178,3 +170,5 @@ Licensed under the MIT License, Copyright © 2025
 ---
 
 Made with 🤍 by [Sat Naing](https://satnaing.dev) 👨🏻‍💻 and [contributors](https://github.com/satnaing/astro-paper/graphs/contributors).
+
+Made with 🤍 by Trend Inquirer.
