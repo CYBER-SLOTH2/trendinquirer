@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block internal or build directories that should not be crawled
+Disallow: /dist/
+Disallow: /pagefind/
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://trendinquirer.com/sitemap.xml

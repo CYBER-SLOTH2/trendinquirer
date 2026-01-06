@@ -4,7 +4,8 @@ import { SITE } from "@/config";
 
 // Point BLOG_PATH to a non-existing folder to disable demo/sample posts
 // Move your real posts into `src/data/posts` (or update this path later)
-export const BLOG_PATH = "src/data/_posts";
+// Primary blog content folder for TrendInquirer
+export const BLOG_PATH = "src/content/blog";
 
 const blog = defineCollection({
   loader: glob({ pattern: "**/[^_]*.md", base: `./${BLOG_PATH}` }),
