@@ -1,10 +1,9 @@
 ---
-title: "Mastering Tax-Efficient Investing: Your Multi-Stage Strategy for Higher Returns"
-description: "Unlock higher returns by implementing smart tax-efficient investment strategies. Learn to optimize your portfolio for every financial stage and keep more of what you earn."
-pubDatetime: "2024-07-25T10:00:00Z"
-modDatetime: "2024-07-25T10:00:00Z"
+title: 'Mastering Tax-Efficient Investing: Your Multi-Stage Strategy for Higher Returns'
+description: 'Unlock higher returns by implementing smart tax-efficient investment strategies. Learn to optimize your portfolio for every financial stage and keep more of what you earn.'
+pubDatetime: 2024-07-25T10:00:00Z
 author: "Trend Inquirer Editorial Team"
-slug: "mastering-tax-efficient-investing"
+slug: mastering-tax-efficient-investing
 featured: false
 draft: false
 tags:
