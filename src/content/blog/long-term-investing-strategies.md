@@ -1,4 +1,3 @@
-```markdown
 ---
 seo_title: "Long-Term Investing Strategies: Your Path to Financial Freedom"
 post_slug: "long-term-investing-strategies"
