@@ -97,4 +97,4 @@ If you have questions about this Disclaimer or any content published on Trend In
 
 ---
 
-**Last updated:** {{ new Date().getFullYear() }}
+**Last updated:** 2026

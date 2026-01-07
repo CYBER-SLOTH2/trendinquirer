@@ -139,4 +139,4 @@ If you have any questions about these Terms of Service, please contact us via th
 
 ---
 
-**Last updated:** {{ new Date().getFullYear() }}
+**Last updated:** 2026

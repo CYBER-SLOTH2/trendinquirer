@@ -133,4 +133,4 @@ If you have any questions about this Privacy Policy or our data practices, pleas
 
 ---
 
-**Last updated:** {{ new Date().getFullYear() }}
+**Last updated:** 2026
