@@ -1,7 +1,7 @@
 ---
 title: 'AI for Strategic Decisions: Unlocking Growth & Competitive Edge'
 description: 'Discover how AI is revolutionizing strategic business decisions. Learn to leverage AI for proactive planning, competitive advantage, and sustainable growth.'
-pubDatetime: 2026-01-08
+pubDatetime: 2025-01-06T00:00:00Z
 author: "Trend Inquirer Editorial Team"
 slug: ai-strategic-decisions-business-growth
 featured: false
