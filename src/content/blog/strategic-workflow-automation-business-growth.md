@@ -1,6 +1,6 @@
 ---
-title: "Strategic Workflow Automation: Fueling Business Growth & Innovation"
-description: "Discover how strategic workflow automation transforms businesses from simply efficient to truly growth-oriented. Learn to identify high-impact areas and measure real ROI."
+title: 'Strategic Workflow Automation: Fueling Business Growth & Innovation'
+description: 'Discover how strategic workflow automation transforms businesses from simply efficient to truly growth-oriented. Learn to identify high-impact areas and measure real ROI.'
 pubDatetime: 2024-07-25T11:00:00Z
 author: "Trend Inquirer Editorial Team"
 slug: strategic-workflow-automation-business-growth
