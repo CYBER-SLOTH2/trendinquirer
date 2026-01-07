@@ -21,7 +21,7 @@ tags:
 
 The landscape of content creation is evolving at an unprecedented pace, and artificial intelligence is at the forefront of this transformation. AI writing assistants have rapidly moved from a niche novelty to an indispensable part of the modern creator's toolkit. These sophisticated tools do more than just correct grammar or suggest synonyms; they act as creative partners, research assistants, and productivity boosters. For bloggers, marketers, and digital storytellers, leveraging the right AI assistant means overcoming writer's block, scaling content production, and unlocking new levels of efficiency. By handling repetitive tasks and providing data-driven insights, these tools free up creators to focus on what they do best: developing unique ideas, refining their narrative voice, and building genuine connections with their audience. This guide explores the best AI writing assistants available today, focusing on how to strategically integrate them into your workflow.
 
-![Content creator using an AI writing assistant on a laptop](public/assets/images/ai-writing-assistant-hero.webp)
+![Content creator using an AI writing assistant on a laptop](/assets/images/ai-writing-assistant-hero.webp)
 
 ## Why AI Writing Assistants Are Essential for Modern Content Creation
 
