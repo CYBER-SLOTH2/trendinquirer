@@ -1,4 +1,3 @@
-```markdown
 ---
 title: The Strategic Edge: AI Productivity Tools for Small Business Growth
 description: Discover how AI productivity tools can transform your small business. Learn to leverage AI for strategic growth, enhanced efficiency, and a competitive edge.
