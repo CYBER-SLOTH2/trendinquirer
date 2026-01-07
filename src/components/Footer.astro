@@ -11,14 +11,32 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
 ---
 
 <footer
-  class:list={["app-layout bg-background/50 text-sm", { "mt-auto": !noMarginTop }, className]}
+  class:list={[
+    "app-layout bg-background/50 text-sm",
+    { "mt-auto": !noMarginTop },
+    className,
+  ]}
+  role="contentinfo"
   {...attrs}
 >
   <div class="py-10 border-t border-border">
     <div class="max-w-screen-xl mx-auto px-4 grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+
+      <!-- BRAND / IDENTITY -->
       <div class="md:col-span-5">
-        <a href="/" class="inline-flex items-center gap-3" aria-label="TrendInquirer home">
-          <svg viewBox="0 0 400 80" fill="none" aria-hidden="true" class="flex-shrink-0 svg-responsive" role="img" aria-label="TrendInquirer logo">
+        <a
+          href="/"
+          class="inline-flex items-center gap-3"
+          aria-label="TrendInquirer home"
+        >
+          <svg
+            viewBox="0 0 400 80"
+            fill="none"
+            aria-hidden="true"
+            class="flex-shrink-0 svg-responsive"
+            role="img"
+            aria-label="TrendInquirer logo"
+          >
             <defs>
               <linearGradient id="g2" x1="0" x2="1" y1="0" y2="0">
                 <stop offset="0%" stop-color="#06b6d4" />
@@ -26,36 +44,91 @@ const { noMarginTop = false, class: className, ...attrs } = Astro.props;
               </linearGradient>
             </defs>
             <rect x="8" y="8" width="64" height="64" rx="12" fill="url(#g2)" />
-            <path d="M30 22 L44 38" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M30 22 L44 38"
+              stroke="#fff"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
             <circle cx="32" cy="44" r="6" fill="#fff" />
           </svg>
+
           <div>
-            <div class="font-semibold">TrendInquirer</div>
+            <div class="font-semibold text-base">TrendInquirer</div>
+            <div class="text-xs text-muted-foreground">
+              Independent research-backed insights on trends & technology
+            </div>
           </div>
         </a>
+
+        <p class="mt-4 max-w-md text-muted-foreground">
+          TrendInquirer is an independent digital publication focused on
+          emerging trends, technology, AI, finance, and digital culture.
+          Our content is written for clarity, accuracy, and reader trust.
+        </p>
       </div>
 
-      <div class="md:col-span-4">
-        <h4 class="font-semibold mb-2">Legal</h4>
+      <!-- LEGAL / TRUST LINKS -->
+      <nav class="md:col-span-4" aria-label="Footer legal navigation">
+        <h4 class="font-semibold mb-3">Legal & Transparency</h4>
         <ul class="space-y-2">
-          <li><a href="/about/">About</a></li>
-          <li><a href="/privacy/">Privacy</a></li>
-          <li><a href="/terms/">Terms</a></li>
-          <li><a href="/rss.xml">RSS</a></li>
+          <li><a href="/about/" class="hover:underline">About</a></li>
+          <li><a href="/privacy/" class="hover:underline">Privacy Policy</a></li>
+          <li><a href="/terms/" class="hover:underline">Terms of Service</a></li>
+          <li><a href="/disclaimer/" class="hover:underline">Disclaimer</a></li>
+          <li><a href="/contact/" class="hover:underline">Contact</a></li>
+          <li><a href="/rss.xml" class="hover:underline">RSS Feed</a></li>
         </ul>
-      </div>
+      </nav>
 
+      <!-- NEWSLETTER / CONTACT -->
       <div class="md:col-span-3">
-        <h4 class="font-semibold mb-2">Stay informed</h4>
-        <p class="mb-3">Subscribe to short, weekly updates — no spam. We send one concise newsletter per week.</p>
-        <form action="#" method="post" class="flex gap-2" aria-label="Subscribe to TrendInquirer newsletter">
-          <input aria-label="Email address" name="email" type="email" placeholder="you@example.com" required class="flex-1 rounded border border-border px-3 py-2 bg-white/5 text-foreground focus:outline-none" />
-          <button class="rounded px-3 py-2 bg-accent text-white hover:opacity-95" type="submit">Subscribe</button>
+        <h4 class="font-semibold mb-3">Stay Informed</h4>
+
+        <p class="mb-3 text-muted-foreground">
+          Get concise weekly updates. No spam, no marketing noise —
+          just one carefully curated email per week.
+        </p>
+
+        <!-- NOTE: keep action empty until backend added -->
+        <form
+          action="#"
+          method="post"
+          class="flex gap-2"
+          aria-label="Subscribe to TrendInquirer newsletter"
+        >
+          <input
+            aria-label="Email address"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+            class="flex-1 rounded border border-border px-3 py-2 bg-white/5 text-foreground focus:outline-none"
+          />
+          <button
+            class="rounded px-3 py-2 bg-accent text-white hover:opacity-95"
+            type="submit"
+          >
+            Subscribe
+          </button>
         </form>
 
-        <div class="mt-4 text-xs">Contact: <a href="mailto:editor@trendinquirer.com" class="underline">editor@trendinquirer.com</a></div>
-        <div class="mt-2 text-xs">© {currentYear} TrendInquirer. All rights reserved.</div>
+        <div class="mt-4 text-xs">
+          Editorial contact:
+          <a
+            href="mailto:editor@trendinquirer.com"
+            class="underline"
+          >
+            editor@trendinquirer.com
+          </a>
+        </div>
+
+        <div class="mt-2 text-xs text-muted-foreground">
+          © {currentYear} TrendInquirer. All rights reserved.
+        </div>
       </div>
+
     </div>
   </div>
 </footer>
