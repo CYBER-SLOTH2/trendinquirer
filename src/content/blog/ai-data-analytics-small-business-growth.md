@@ -1,4 +1,3 @@
-```markdown
 ---
 title: 'AI Data Analytics for Small Businesses: Unlocking Growth Without Enterprise Budgets'
 description: 'Discover how AI-powered data analytics can transform your small business operations, offering actionable insights and competitive advantages without breaking the bank.'
