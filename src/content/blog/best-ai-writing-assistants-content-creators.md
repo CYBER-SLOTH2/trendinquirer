@@ -1,12 +1,19 @@
-```markdown
 ---
 title: Best AI Writing Assistants for Content Creators in 2024
 description: Discover the top AI writing assistants designed for content creators. Compare features, pricing, and find the perfect AI tool to streamline your workflow and boost productivity.
-slug: best-ai-writing-assistants-content-creators
+pubDatetime: 2024-07-31T00:00:00Z
 author: Trend Inquirer Editorial Team
-pubDatetime: 2024-07-31
-keywords: best AI writing assistants,AI content generator,AI writing software,AI writing tools,AI assistant for writers,content creation AI,AI for content marketing
+slug: best-ai-writing-assistants-content-creators
 featured: false
+draft: false
+tags:
+  - best ai writing assistants
+  - ai content generator
+  - ai writing software
+  - ai writing tools
+  - ai assistant for writers
+  - content creation ai
+  - ai for content marketing
 ---
 
 ## Table of Contents
