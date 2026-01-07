@@ -6,7 +6,7 @@ author: Trend Inquirer Editorial Team
 slug: best-ai-writing-assistants-content-creators
 featured: false
 draft: false
-ogImage: public/assets/images/ai-writing-assistant-hero.webp
+ogImage: /assets/images/ai-writing-assistant-hero.webp
 tags:
   - best ai writing assistants
   - ai content generator
