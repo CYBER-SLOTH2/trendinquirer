@@ -3,7 +3,7 @@ title: "How Long Do Gaming Laptops Last? (The Surprising Truth)"
 description: "Discover the true lifespan of a gaming laptop, the key factors that affect its durability, and expert tips to make your investment last for years to come."
 slug: "how-long-do-gaming-laptops-last"
 author: "Trend Inquirer Editorial Team"
-publishDate: "2026-01-07"
+pubDatetime: "2026-01-07"
 keywords:
   - "how long do gaming laptops last"
   - "gaming laptop lifespan"
