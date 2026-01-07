@@ -23,7 +23,7 @@ In today's competitive digital landscape, staying ahead requires more than just 
 * [Integrating AI Tools for a Seamless Workflow](#integrating-ai-tools-for-a-seamless-workflow)
 * [Future Trends: The Next Frontier of AI in Content Marketing](#future-trends-the-next-frontier-of-ai-in-content-marketing)
 
-![A stylized, abstract representation of AI processing SEO data, with lines connecting keywords, content concepts, and search engine results pages.](public/assets/images/ai-seo-strategy-ecosystem-hero.webp)
+![A stylized, abstract representation of AI processing SEO data, with lines connecting keywords, content concepts, and search engine results pages.](/assets/images/ai-seo-strategy-ecosystem-hero.webp)
 
 ## Beyond Keyword Research: The Evolution of AI in SEO
 
