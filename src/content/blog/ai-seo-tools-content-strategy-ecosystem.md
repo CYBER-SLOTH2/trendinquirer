@@ -10,7 +10,7 @@ tags:
   - ai
   - seo
   - content strategy
-ogImage: "/assets/images/ai-seo-strategy-ecosystem-hero.webp"
+ogImage: "public/assets/images/ai-seo-strategy-ecosystem-hero.webp"
 ---
 
 
