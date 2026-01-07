@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Mastering Tax-Efficient Investing: Your Multi-Stage Strategy for Higher Returns"
 description: "Unlock higher returns by implementing smart tax-efficient investment strategies. Learn to optimize your portfolio for every financial stage and keep more of what you earn."
