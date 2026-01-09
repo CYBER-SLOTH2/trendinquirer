@@ -23,7 +23,7 @@ The monthly cloud bill arrives, and it’s a familiar story: higher than expecte
 
 This cycle of "bill shock" followed by frantic cost-cutting is unsustainable. True financial control in the cloud doesn't come from knee-jerk reactions; it comes from proactive, intelligent governance.
 
-Cloud governance for cost control is a strategic framework of policies, processes, and tools designed to provide visibility, accountability, and optimization over your cloud spending. It’s about shifting from asking, "How can we spend less?" to "How can we get the most value from every dollar we spend?" By embedding financial discipline into your cloud operations, you transform your cloud environment from a runaway cost center into a powerful, efficient engine for innovation and growth. A comprehensive approach to [cloud cost optimization strategies](/post/cloud-cost-optimization-strategies) begins not with cutting, but with governing.
+Cloud governance for cost control is a strategic framework of policies, processes, and tools designed to provide visibility, accountability, and optimization over your cloud spending. It’s about shifting from asking, "How can we spend less?" to "How can we get the most value from every dollar we spend?" By embedding financial discipline into your cloud operations, you transform your cloud environment from a runaway cost center into a powerful, efficient engine for innovation and growth. A comprehensive approach to [cloud cost optimization strategies](/posts/cloud-cost-optimization-strategies) begins not with cutting, but with governing.
 
 This guide provides a blueprint for establishing robust cloud financial governance, moving your organization beyond reactive tactics to a sustainable, cost-efficient cloud strategy.
 
@@ -64,7 +64,7 @@ Effective cloud cost governance facilitates a shift to proactive value realizati
 *   **Efficient Resource Usage:** Ensuring that every resource is appropriately sized, actively used, and delivering value.
 *   **Empowered Teams:** Giving engineers the visibility and tools to make cost-aware decisions without stifling their autonomy.
 
-This strategic mindset is the core of modern [FinOps and cloud cost management](/post/finops-cloud-cost-management-optimization), where governance acts as the foundational layer enabling collaboration between finance, IT, and business units.
+This strategic mindset is the core of modern [FinOps and cloud cost management](/posts/finops-cloud-cost-management-optimization), where governance acts as the foundational layer enabling collaboration between finance, IT, and business units.
 
 ## Key Pillars of Effective Cloud Cost Governance
 
@@ -99,7 +99,7 @@ Examples of automated policies include:
 *   **Tag Enforcement:** Preventing the launch of new resources that do not comply with the organization's tagging policy.
 *   **Resource Scheduling:** Automatically shutting down non-production environments (e.g., development and testing) outside of business hours to save costs.
 
-By codifying rules, you reduce human error and ensure that governance standards are consistently applied. This kind of [strategic workflow automation](/post/strategic-workflow-automation-business-growth) is essential for managing cloud environments at scale.
+By codifying rules, you reduce human error and ensure that governance standards are consistently applied. This kind of [strategic workflow automation](/posts/strategic-workflow-automation-business-growth) is essential for managing cloud environments at scale.
 
 ### Resource Optimization and Efficiency
 
@@ -133,7 +133,7 @@ Budgets are a core component of financial control. In the cloud, this needs to b
 
 *   **Set Granular Budgets:** Establish budgets for individual teams, projects, and applications, not just a single monolithic IT budget.
 *   **Implement Anomaly Detection:** Use tools to monitor spending in real-time and automatically flag unusual spikes that could indicate a misconfiguration or a security breach.
-*   **Forecast with Confidence:** Leverage historical data and business plans to create more accurate spending forecasts. Advanced techniques using [AI for financial forecasting](/post/ai-financial-forecasting-strategic-decisions) are becoming increasingly valuable for predicting cloud spend with greater precision.
+*   **Forecast with Confidence:** Leverage historical data and business plans to create more accurate spending forecasts. Advanced techniques using [AI for financial forecasting](/posts/ai-financial-forecasting-strategic-decisions) are becoming increasingly valuable for predicting cloud spend with greater precision.
 
 ### Enforcing Tagging and Naming Standards
 
@@ -158,7 +158,7 @@ Strong Identity and Access Management (IAM) policies are critical for cost contr
 *   **Role-Based Access Control (RBAC):** Define roles with specific permissions (e.g., a "Developer" role cannot provision the most expensive instance types).
 *   **Regular Audits:** Periodically review permissions to remove unnecessary access.
 
-Thinking about [cloud data governance best practices](/post/cloud-data-governance-best-practices) provides a useful parallel; just as you control access to sensitive data, you must control access to resource creation to manage costs.
+Thinking about [cloud data governance best practices](/posts/cloud-data-governance-best-practices) provides a useful parallel; just as you control access to sensitive data, you must control access to resource creation to manage costs.
 
 ## Tools and Technologies for Cloud Cost Governance
 
@@ -177,7 +177,7 @@ All major cloud providers (AWS, Azure, Google Cloud) offer a suite of free, buil
 A growing market of specialized third-party platforms offers more advanced capabilities for mature cloud organizations.
 
 *   **Examples:** Cloudability (Apptio), Flexera One, CloudHealth (VMware), Harness.
-*   **Pros:** They provide a unified view across multi-cloud environments, offer sophisticated analytics and recommendation engines, and deliver powerful automation for policy enforcement and optimization. They often simplify the complexities of overall [SaaS subscription management](/post/saas-subscription-management-business) by integrating various tech spends.
+*   **Pros:** They provide a unified view across multi-cloud environments, offer sophisticated analytics and recommendation engines, and deliver powerful automation for policy enforcement and optimization. They often simplify the complexities of overall [SaaS subscription management](/posts/saas-subscription-management-business) by integrating various tech spends.
 *   **Cons:** These platforms come with a subscription cost and require an implementation effort.
 
 ### Automation and Scripting Solutions for Policy Enforcement
@@ -222,7 +222,7 @@ As cloud environments become more complex, the practice of financial governance 
 
 ### Aligning FinOps with Strategic Business Objectives
 
-Ultimately, the goal of cloud cost governance is not just to save money but to maximize the business value of the cloud. This means moving the conversation from cost per instance to the cost of goods sold (COGS) for a digital product or the ROI of a new feature. Effective governance ensures that capital isn't wasted on inefficient infrastructure but is instead freed up to fuel innovation and drive [strategic business decisions for growth](/post/ai-strategic-decisions-business-growth).
+Ultimately, the goal of cloud cost governance is not just to save money but to maximize the business value of the cloud. This means moving the conversation from cost per instance to the cost of goods sold (COGS) for a digital product or the ROI of a new feature. Effective governance ensures that capital isn't wasted on inefficient infrastructure but is instead freed up to fuel innovation and drive [strategic business decisions for growth](/posts/ai-strategic-decisions-business-growth).
 
 ### The Role of AI and Machine Learning in Advanced Governance
 
