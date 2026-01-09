@@ -22,30 +22,30 @@ export const SOCIALS: Social[] = [
     linkTitle: `${SITE.title} on Twitter`,
     icon: IconBrandX,
   },
-  {
+//  {
     name: "Facebook",
     href: "https://facebook.com/trendinquirer",
     linkTitle: `${SITE.title} on Facebook`,
     icon: IconFacebook,
-  },
-  {
+//  },
+//  {
     name: "LinkedIn",
     href: "https://www.linkedin.com/company/trendinquirer/",
     linkTitle: `${SITE.title} on LinkedIn`,
     icon: IconLinkedin,
-  },
-  {
+//  },
+//  {
     name: "Instagram",
     href: "https://instagram.com/trendinquirer",
     linkTitle: `${SITE.title} on Instagram`,
     icon: IconPinterest,
-  },
-  {
+//  },
+//  {
     name: "YouTube",
     href: "https://youtube.com/@trendinquirer",
     linkTitle: `${SITE.title} on YouTube`,
     icon: IconTelegram,
-  },
+//  },
   {
     name: "Mail",
     href: "mailto:contact@trendinquirer.com",
