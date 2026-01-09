@@ -24,7 +24,7 @@ The era of the static five-year strategic plan is over. In a world defined by un
 
 Enter Artificial Intelligence. AI is not just another tool for operational efficiency; it is fundamentally reshaping the art and science of business strategy. It's the "strategic compass" that allows modern organizations to move beyond reacting to the past and begin anticipating the future. By processing vast, complex datasets in real-time, AI provides the intelligent foresight needed to spot nascent trends, map competitive battlegrounds, and simulate future scenarios with astonishing accuracy.
 
-This isn't about replacing human strategists. It's about augmenting their expertise, supercharging their intuition, and enabling them to make smarter, faster, more resilient decisions. While many discussions focus on using [AI for project management](/post/ai-project-management-efficiency-success) to execute tasks more efficiently, the real transformation lies in using it to decide *what tasks are worth doing in the first place*.
+This isn't about replacing human strategists. It's about augmenting their expertise, supercharging their intuition, and enabling them to make smarter, faster, more resilient decisions. While many discussions focus on using [AI for project management](/posts/ai-project-management-efficiency-success) to execute tasks more efficiently, the real transformation lies in using it to decide *what tasks are worth doing in the first place*.
 
 This guide will explore the critical role of AI in strategic planning, from identifying market opportunities to building a resilient, future-proof organization. We will introduce a practical framework for integrating AI into your strategic core and examine the future of leadership in an age of human-machine synergy.
 
