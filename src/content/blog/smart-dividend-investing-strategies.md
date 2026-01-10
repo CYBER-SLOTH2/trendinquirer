@@ -1,4 +1,3 @@
-```markdown
 ---
 title: 'Smart Dividend Investing Strategies for Long-Term Passive Income'
 description: 'Unlock financial independence with smart dividend investing strategies. Learn how to build a resilient, diversified portfolio for long-term passive income and wealth growth.'
