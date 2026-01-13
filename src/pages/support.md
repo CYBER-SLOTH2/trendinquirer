@@ -1,0 +1,111 @@
+---
+layout: ../layouts/AboutLayout.astro
+title: "Support Trend Inquirer"
+description: "Support Trend Inquirer, an independent, research-backed publication delivering transparent insights on trends, technology, finance, and digital culture."
+---
+
+## Support Trend Inquirer
+
+**Trend Inquirer** is an independent digital publication built on accuracy, transparency, and reader trust.  
+We publish open-access content without paywalls, sponsored bias, or external editorial pressure.
+
+Our work is sustained through responsible advertising and **voluntary reader support**.
+
+---
+
+## Why Reader Support Matters
+
+Producing high-quality, research-backed content requires time, expertise, and reliable infrastructure.
+
+Reader support helps us:
+
+- Fund in-depth research and original analysis  
+- Maintain fast, secure, and privacy-friendly infrastructure  
+- Improve content quality and factual accuracy  
+- Keep articles freely accessible to everyone  
+- Reduce dependence on intrusive or misleading monetization  
+
+Support allows us to prioritize **quality over volume**.
+
+---
+
+## How You Can Support
+
+If Trend Inquirer has helped you understand complex topics, stay informed, or make better decisions, you may choose to support our work through a **one-time voluntary contribution**.
+
+There are:
+
+- No subscriptions  
+- No locked content  
+- No special access or editorial influence  
+
+Support is optional and always appreciated.
+
+---
+
+## Donate via Cryptocurrency
+
+You may support Trend Inquirer using the following cryptocurrency addresses.
+
+### Bitcoin (BTC)
+[bc1qetz2zspn7ununqdnqyqyagdwmjhs27l7a53h02](bitcoin:bc1qetz2zspn7ununqdnqyqyagdwmjhs27l7a53h02)
+
+### Ethereum (ETH)
+[0x0ed35f0e85411a3184abe7b417ec6dff2ff0efa6](ethereum:0x0ed35f0e85411a3184abe7b417ec6dff2ff0efa6)
+
+### Solana (SOL)
+`6TJj9QD14guPZavpWE8aUzejxqZM8X4BszG5cKXdRrMF`
+
+*(Tap or copy the address using your wallet of choice.)*
+
+---
+
+## Editorial Independence
+
+Transparency is a core principle at Trend Inquirer:
+
+- Donations do **not** influence editorial decisions  
+- No paid coverage or guaranteed mentions  
+- No preferential treatment for supporters  
+- Content remains unbiased and research-driven  
+
+All articles follow the same editorial standards regardless of funding.
+
+---
+
+## Transparency & Ethics
+
+We are committed to ethical publishing practices:
+
+- Advertisements comply with **Google AdSense policies**  
+- Sponsored or affiliate content (if any) is clearly disclosed  
+- Reader interests always come before monetization  
+- Financial support does not affect rankings or opinions  
+
+Trust is earned — and protected.
+
+---
+
+## Other Ways to Support
+
+You can also support Trend Inquirer by:
+
+- Sharing articles you find valuable  
+- Providing constructive feedback  
+- Reporting errors or outdated information  
+- Engaging respectfully with our content  
+
+Every contribution, big or small, helps.
+
+---
+
+## Contact & Questions
+
+If you have questions about supporting Trend Inquirer or wish to discuss collaboration, reach out at:
+
+📧 **editor@trendinquirer.com**
+
+---
+
+**Thank you for supporting independent, transparent journalism.**  
+Your trust makes Trend Inquirer possible.
