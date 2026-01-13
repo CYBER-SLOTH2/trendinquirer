@@ -1,0 +1,121 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const pageTitle = "Support TrendInquirer";
+const pageDescription =
+  "Support independent, research-backed journalism at TrendInquirer. Voluntary crypto donations help fund in-depth analysis, tools, and original reporting.";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="max-w-screen-md mx-auto px-4 py-16">
+    <!-- HEADER -->
+    <header class="mb-10">
+      <h1 class="text-3xl font-semibold tracking-tight">
+        Support Independent Research
+      </h1>
+      <p class="mt-3 text-muted-foreground">
+        TrendInquirer is an independent digital publication focused on emerging
+        trends, technology, AI, finance, and digital culture.
+      </p>
+    </header>
+
+    <!-- INTRO -->
+    <section class="space-y-6 text-base leading-relaxed">
+      <p>
+        We publish open-access content without paywalls, sponsored bias,
+        or external editorial pressure. Our work is funded primarily through
+        advertising and voluntary reader support.
+      </p>
+
+      <p>
+        If our insights, analysis, or tools have helped you stay informed or
+        make better decisions, you can support our work with a one-time,
+        optional contribution.
+      </p>
+
+      <p class="text-muted-foreground">
+        Contributions directly support research time, infrastructure costs,
+        and the ongoing production of accurate, trustworthy content.
+      </p>
+    </section>
+
+    <!-- DONATION BLOCK -->
+    <section class="mt-12 rounded-lg border border-border p-6 bg-background/50">
+      <h2 class="text-xl font-semibold mb-2">
+        Donate via Cryptocurrency
+      </h2>
+
+      <p class="text-sm text-muted-foreground mb-6">
+        Donations are voluntary and do not influence editorial coverage.
+        No special access or guarantees are provided.
+      </p>
+
+      <div class="space-y-5 text-sm break-all">
+        <!-- BITCOIN -->
+        <div>
+          <div class="font-medium">Bitcoin (BTC)</div>
+          <a
+            href="bitcoin:bc1qetz2zspn7ununqdnqyqyagdwmjhs27l7a53h02"
+            class="text-accent hover:underline"
+            rel="nofollow noopener"
+            aria-label="Donate Bitcoin"
+          >
+            bc1qetz2zspn7ununqdnqyqyagdwmjhs27l7a53h02
+          </a>
+        </div>
+
+        <!-- ETHEREUM -->
+        <div>
+          <div class="font-medium">Ethereum (ETH)</div>
+          <a
+            href="ethereum:0x0ed35f0e85411a3184abe7b417ec6dff2ff0efa6"
+            class="text-accent hover:underline"
+            rel="nofollow noopener"
+            aria-label="Donate Ethereum"
+          >
+            0x0ed35f0e85411a3184abe7b417ec6dff2ff0efa6
+          </a>
+        </div>
+
+        <!-- SOLANA -->
+        <div>
+          <div class="font-medium">Solana (SOL)</div>
+          <a
+            href="#"
+            onclick="navigator.clipboard.writeText('6TJj9QD14guPZavpWE8aUzejxqZM8X4BszG5cKXdRrMF'); return false;"
+            class="text-accent hover:underline"
+            aria-label="Copy Solana address"
+          >
+            6TJj9QD14guPZavpWE8aUzejxqZM8X4BszG5cKXdRrMF
+            <span class="text-xs text-muted-foreground">(tap to copy)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSPARENCY -->
+    <section class="mt-12 space-y-4 text-sm text-muted-foreground">
+      <h3 class="font-semibold text-foreground">
+        Transparency & Editorial Independence
+      </h3>
+
+      <p>
+        TrendInquirer maintains full editorial independence. Donations do not
+        affect topic selection, rankings, opinions, or coverage.
+      </p>
+
+      <p>
+        Supporting TrendInquirer helps keep high-quality, research-driven
+        content accessible to everyone.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <footer class="mt-14 text-xs text-muted-foreground">
+      Questions or concerns? Contact{" "}
+      <a href="mailto:editor@trendinquirer.com" class="underline">
+        editor@trendinquirer.com
+      </a>
+    </footer>
+  </main>
+</Layout>
