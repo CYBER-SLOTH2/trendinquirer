@@ -1,106 +1,67 @@
 ---
 layout: ../layouts/AboutLayout.astro
 title: "About Trend Inquirer"
-description: "Learn about Trend Inquirer — a trusted, independent publication delivering research-backed insights on trends, technology, finance, and digital culture."
+description: "Meet Debajyoti Sinha, the founder of Trend Inquirer and HiFi Studio & Mobile. We provide expert-led insights into technology, videography, and digital trends."
 ---
 
-![Trend Inquirer — hero image](/assets/images/about-hero.svg)
+![Trend Inquirer — Professional Media Services](/assets/images/about-hero.svg)
 
-## About Trend Inquirer
+## **Our Identity: Where Creativity Meets the Lens**
 
-**Trend Inquirer** is an independent digital publication dedicated to analyzing **emerging trends, technology developments, finance insights, and digital culture**—with a strong focus on accuracy, clarity, and reader value.
+**Trend Inquirer** is a premier digital authority founded by **Debajyoti Sinha**, a seasoned digital creator and technology expert based in **Medinipur**. Unlike generic blogs, Trend Inquirer is the digital extension of a real-world professional enterprise, **HiFi Studio & Mobile**, which serves a community of over **10,000 dedicated followers**.
 
-Our goal is simple:  
-to help readers **understand what’s trending, why it matters, and how it may impact real life**—without fluff, hype, or misinformation.
-
----
-
-## Our Editorial Standards
-
-Every article published on Trend Inquirer follows strict editorial principles:
-
-- **Research-first approach** using credible sources
-- **Original analysis** written by human editors and AI-assisted research tools
-- **Fact-checking** before publication
-- **Clear separation of facts and opinions**
-- **No misleading, spammy, or clickbait content**
-
-We do **not** publish plagiarized, auto-spun, or low-quality mass-generated articles.
+Our mission is to deliver **fact-checked, research-backed analysis** on emerging trends in technology, finance, and digital culture, ensuring our readers stay ahead in an ever-evolving world.
 
 ---
 
-## Experience & Expertise
+## **Experience & Authority**
 
-Trend Inquirer is maintained by a team with experience in:
+The content on Trend Inquirer is not just curated; it is built on years of hands-on professional experience. Our founder, Debajyoti Sinha, leads a team with verified expertise in:
 
-- Technology & Artificial Intelligence
-- Digital publishing & SEO
-- Financial analysis & market trends
-- Software development & automation
-- Data-driven content strategy
-
-Our writers combine **practical experience** with **research-backed insights**, ensuring content is both informative and actionable.
+* **Professional Videography & Media:** Capturing high-end cinematic stories, weddings, and portraits with technical precision.
+* **Post-Production & Editing:** Advanced digital photo/video editing and professional album design.
+* **Mobile & Technical Services:** Expert knowledge in mobile technology and high-fidelity hardware systems.
+* **Digital Content Strategy:** Managing a large-scale digital presence and providing "WiFi services" and technical infrastructure.
 
 ---
 
-## Transparency & Trust
+## **Strict Editorial Integrity**
 
-We value transparency and reader trust:
+To comply with **Google AdSense Quality Guidelines**, Trend Inquirer follows a rigorous editorial process:
 
-- Sponsored content (if any) is **clearly disclosed**
-- Affiliate links (if used) never influence editorial integrity
-- We prioritize **user benefit over monetization**
-- Advertisements comply with **Google AdSense policies**
-
-Your trust matters more than clicks.
+1.  **Human-First Content:** Every article is written and verified by Debajyoti Sinha. We strictly prohibit low-quality, AI-only, or "spun" content.
+2.  **Accuracy & Fact-Checking:** We use primary sources and real-world testing to validate every technical claim.
+3.  **Transparency:** We disclose all professional affiliations. Our goal is "Maximum Trust" for every reader.
+4.  **Community-Driven:** We incorporate feedback from our 10K+ social media community to ensure our content addresses real-world needs.
 
 ---
 
-## Technology & Performance
+## **Verification & Transparency**
 
-Trend Inquirer is built with modern web technologies to deliver a fast, secure, and accessible experience:
+We invite our readers and partners to verify our professional standing through our official, high-authority social channels:
 
-- ⚡ **Astro** for ultra-fast static rendering
-- 🎨 **Tailwind CSS** for clean, responsive design
-- 🌗 Light & Dark mode support
-- 🔍 Privacy-friendly static search using PageFind
-- 🖼️ Automatic social preview image generation
-- 📱 Fully responsive across all devices
-
-We continuously optimize for **Core Web Vitals** and accessibility.
+* **Official Business Page:** [HiFi Studio & Mobile (10K+ Followers)](https://www.facebook.com/Hifi.Studio9)
+* **Founder Profile:** [Debajyoti Sinha (Verified Digital Creator)](https://fb.com/Debajyoti1998)
 
 ---
 
-## Our Mission
+## **Technical Infrastructure**
 
-Our mission is to become a **reliable reference source** for readers seeking:
+Trend Inquirer is built for speed and user safety, utilizing a modern tech stack to ensure a "Core Web Vitals" compliant experience:
 
-- Honest trend analysis
-- High-quality educational content
-- Practical insights without exaggerated claims
-
-We aim to grow organically by **earning trust**, not gaming algorithms.
+-   ⚡ **Astro Framework:** For ultra-fast, SEO-optimized static rendering.
+-   🎨 **Tailwind CSS:** For a clean, mobile-responsive user interface.
+-   🛡️ **Privacy-Centric:** We respect user data and adhere to global privacy standards.
 
 ---
 
-## Community & Feedback
+## **Contact & Legal**
 
-We welcome feedback, corrections, and contributions.
-
-If you notice an error, want to suggest improvements, or wish to collaborate, please contact us through the **Contact page** or open an issue via our official repository.
-
----
-
-## Legal & Policies
-
-For full transparency, please review:
-- Privacy Policy
-- Terms & Conditions
-- Disclaimer
-
-These pages outline how data is handled, how content is created, and how monetization works.
+We are committed to full transparency and open communication.
+* **Privacy Policy:** [View our data practices](/privacy-policy)
+* **Terms of Service:** [View our site terms](/terms)
+* **Contact Us:** Reach out directly via our [Contact Page](/contact) or via **WhatsApp** through our official business handle.
 
 ---
 
-**Thank you for trusting Trend Inquirer.**  
-We’re here to inform, not influence — and to grow with our readers.
+**Thank you for trusting Trend Inquirer.** *Capturing Stories | Freezing Moments in Time | Delivering Maximum Trust.*
