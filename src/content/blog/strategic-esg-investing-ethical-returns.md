@@ -1,7 +1,7 @@
 ---
 title: 'Strategic ESG Investing: Balancing Returns with Ethical Impact'
 description: 'Explore strategic ESG investing to balance financial performance with ethical impact. Learn how to choose funds, assess criteria, and build a sustainable portfolio.'
-pubDatetime: 2026-01-10T17:02:29Z
+pubDatetime: 2026-01-04T17:02:29Z
 author: "Trend Inquirer Editorial Team"
 slug: strategic-esg-investing-ethical-returns
 featured: true
