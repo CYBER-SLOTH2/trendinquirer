@@ -1,7 +1,7 @@
 ---
 title: 'Tax Loss Harvesting: Smart Strategies to Boost Investment Returns'
 description: 'Discover smart tax loss harvesting strategies to reduce your capital gains and boost investment returns. Learn how to implement it effectively and avoid common mistakes.'
-pubDatetime: 2026-01-12T23:02:28Z
+pubDatetime: 2026-01-02T23:02:28Z
 author: "Trend Inquirer Editorial Team"
 slug: tax-loss-harvesting-strategies-guide
 featured: true
