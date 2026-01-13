@@ -1,7 +1,7 @@
 ---
 title: 'Strategic Private Credit Investing: Unlocking Enhanced Yields'
 description: 'Unlock enhanced yields and diversify your portfolio with strategic private credit investing. Understand this sophisticated asset class, its benefits, risks, and how to access it.'
-pubDatetime: 2026-01-13T11:02:34Z
+pubDatetime: 2026-01-05T11:02:34Z
 author: "Trend Inquirer Editorial Team"
 slug: strategic-private-credit-investing-guide
 featured: true
